@@ -4,7 +4,8 @@
       "runtime": "python3.9"
     }
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/app.py" }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/app.py" },
+    { "src": "/(.*)", "dest": "/api/app.py" }
   ]
 }
